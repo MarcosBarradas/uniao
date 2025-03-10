@@ -1,0 +1,44 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap');
+
+
+
+body {
+    margin: 0;
+    background-color: black;
+    color: #fff;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.banner, .content, .title {
+    font-family: "Cinzel Decorative", Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.content p {
+    font-family: "Cinzel", Georgia, 'Times New Roman', Times, serif;
+    font-size: .5em;
+    font-weight:700
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0; /*defina posição padrão*/
+    background-image: url(img/pexels-cottonbro-9317183.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-image: url(img/ink.gif);
+    mask-position: center;
+}
